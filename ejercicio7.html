@@ -7,29 +7,21 @@
 </head>
 <body>
     <h1>Registro</h1>
-    <form action="">
-        <label for="Nombre">Nombre: </label><input type="text" id="Nombre">
-        <label for="Apellido">Apellido: </label><input type="text" id="Apellido">
+    <form action="https://webhook.site/d9664e05-7b6f-4e53-ba4e-1fedb4f083c1" method="POST" target="_blank">
+        <label for="Nombre">Nombre: </label><input type="text" name="Nombre" placeholder="Adri" required>
+        <label for="Apellido">Apellido: </label><input type="text" name="Apellido" placeholder="Mateos" required>
         <br>
-        <input type="radio" value="hombre">hombre <input type="radio" value="mujer">Mujer <input type="radio" value="Otro">Otro
+        <input type="radio" name="sexo">hombre <input type="radio" name="sexo">Mujer <input type="radio" name="sexo">Otro
         <br>
-        <label for="email">Email: </label> <input type="email" id="email">
-        <label for="Password">Password: </label> <input type="password">
+        <label for="email">Email: </label> <input type="email" name="email" placeholder="barras@barras.es">
+        <label for="Password">Password: </label> <input name="password" type="password"  minlength="5" maxlength="10" placeholder="5 - 10 caracteres" required>
         <br>
         <label for="Birthday">Birthday: </label> 
-        <select name="Month" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
-        <select name="" id="">
-            <option value=""></option>
-        </select>
-        <select name="" id="">
-            <option value=""></option>
-        </select>
+        <input type="date" name="birthday">
         <br>
-        <label for="aceptar">Acepto la condiciones de uso</label> <input type="checkbox">
+        <label for="aceptar">Acepto la condiciones de uso</label> <input type="checkbox" name="accept">
+        <br>
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
